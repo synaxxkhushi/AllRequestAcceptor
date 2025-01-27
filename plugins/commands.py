@@ -18,7 +18,7 @@ async def start_message(c,m):
     if not await db.is_user_exist(m.from_user.id):
         await db.add_user(m.from_user.id, m.from_user.first_name)
         await c.send_message(LOG_CHANNEL, LOG_TEXT.format(m.from_user.id, m.from_user.mention))
-    await m.reply_photo(f"https://envs.sh/fgl.jpg",
+    await m.reply_photo(f"https://envs.sh/aiy.jpg",
         caption=f"<b>ʜᴇʟʟᴏ {m.from_user.mention} 👋\n\n• ɪ ᴀᴍ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇᴘᴛᴏʀ ʙᴏᴛ.\n• ɪ ᴄᴀɴ ᴀᴄᴄᴇᴘᴛ ᴀʟʟ ᴏʟᴅ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ.\n\n• ғᴏʀ ᴀʟʟ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ ᴜsᴇ - /accept</b>",
         reply_markup=InlineKeyboardMarkup(
             [[
