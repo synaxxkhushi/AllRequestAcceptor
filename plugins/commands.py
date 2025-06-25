@@ -22,10 +22,10 @@ async def start_message(c,m):
         caption=f"<b>ʜᴇʟʟᴏ {m.from_user.mention} 👋\n\n• ɪ ᴀᴍ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇᴘᴛᴏʀ ʙᴏᴛ.\n• ɪ ᴄᴀɴ ᴀᴄᴄᴇᴘᴛ ᴀʟʟ ᴏʟᴅ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ.\n\n• ғᴏʀ ᴀʟʟ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ ᴜsᴇ - /accept</b>",
         reply_markup=InlineKeyboardMarkup(
             [[
-                InlineKeyboardButton('🇮🇳 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🇮🇳', url='https://t.me/synaxnetwork')
+                InlineKeyboardButton('🇮🇳 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🇮🇳', url='https://t.me/a4bhi')
             ],[
                 InlineKeyboardButton("𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ☘️", url='https://t.me/synaxchatgroup'),
-                InlineKeyboardButton("𝐁𝐨𝐭𝐬 🍁", url='https://t.me/synaxbots')
+                InlineKeyboardButton("𝐁𝐨𝐭𝐬 🍁", url='https://t.me/synaxnetwork')
             ]]
         )
     )
@@ -75,7 +75,7 @@ async def approve_new(client, m):
             await client.send_message(LOG_CHANNEL, LOG_TEXT.format(m.from_user.id, m.from_user.mention))
         await client.approve_chat_join_request(m.chat.id, m.from_user.id)
         try:
-            await client.send_message(m.from_user.id, "**Hello {}!\nWelcome To {}\n\n__Powered By : @SynaxBots __**".format(m.from_user.mention, m.chat.title))
+            await client.send_message(m.from_user.id, "**Hello {}!\nWelcome To {}\n\n__Powered By : @SynaxNetwork __**".format(m.from_user.mention, m.chat.title))
         except:
             pass
     except Exception as e:
