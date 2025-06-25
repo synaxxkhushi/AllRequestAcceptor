@@ -10,7 +10,7 @@ ID - <code>{}</code>
 
 Nᴀᴍᴇ - {}
 
-Bot @RequestAccepterXBot 🦋</b>
+Bot @AllRequestAcceptorBot 🦋</b>
 """
 
 @Client.on_message(filters.command('start'))
